@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceRoot}/_build/build.elf",
+            "name": "Debug with PyOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "servertype": "pyocd",
+            "serverArgs": [
+                "--target",
+                "nrf52833",
+                "--elf",
+                "${workspaceRoot}/_build/build.elf",
+            ]
+        },
+    ]
+}
